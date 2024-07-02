@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="main_column">
+                <div class="left_column">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="right_column">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="item">
+            <img src="images/faq.jpg" alt="">
+        </div>
+    </section>
+
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="faq">
+                <!-- FAQ items -->
+                <div class="faq-item">
+                  <div class="question plus-icon">Where is your catering located? What is your coverage area?</div>
+                  <div class="answer">HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages and web applications.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="question plus-icon">What services do you offer?</div>
+                  <div class="answer">CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a document written in HTML.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="question plus-icon">Where can I see your menus and pricing? Can I order customized menu?</div>
+                  <div class="answer">JavaScript is a programming language that enables interactive web pages. It is used to add dynamic behavior, validate forms, manipulate content, and much more.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="question plus-icon">What is your order policy? How do I confirm my order?</div>
+                    <div class="answer">JavaScript is a programming language that enables interactive web pages. It is used to add dynamic behavior, validate forms, manipulate content, and much more.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="question plus-icon">What is the latest time to order?</div>
+                    <div class="answer">JavaScript is a programming language that enables interactive web pages. It is used to add dynamic behavior, validate forms, manipulate content, and much more.</div>
+                </div>
+             
+              
+        </div>
+    </section>
+    <section class="socket">
+        <div class="container">
+           <span>Design & Developed by Maisha Farjana</span>
+           <h6 id="datetime"></h6>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+   
+    
+
+
+
+
+
+<script>
+    function updateDateTime() {
+      var now = new Date();
+      var datetimeElement = document.getElementById('datetime');
+      datetimeElement.innerHTML = now.toLocaleString();
+    }
+    
+    // Call the function initially
+    updateDateTime();
+    
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+    </script>
+
+<script>
+    // JavaScript to toggle visibility of answers when clicking on questions
+    document.addEventListener('DOMContentLoaded', function() {
+      const questions = document.querySelectorAll('.question');
+      questions.forEach(function(question) {
+        question.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+        });
+      });
+    });
+  </script>
+
+
+
+
+
+</body>
+</html>
